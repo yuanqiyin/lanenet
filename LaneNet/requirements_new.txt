@@ -1,0 +1,38 @@
+***************************
+原作者使用相关库版本
+**************************
+numpy==1.15.1
+tqdm==4.28.1
+glog==0.3.1
+easydict==1.9
+tensorflow_gpu==1.15.2
+matplotlib==3.0.2
+opencv==4.0.0
+scikit_learn==0.21.1
+
+
+***************************
+本文件使用相关库版本
+更新时间：2020年6月9日
+**************************
+numpy==1.18.1
+tqdm==4.34.0
+glog==0.3.1
+easydict==1.9
+tensorflow_gpu==1.14.0
+matplotlib==3.0.3
+opencv==4.1.0
+
+
+python lanenet_data_feed_pipline.py 
+--dataset_dir D:/yinyuanqi/DataSet/tusimple/ 
+--tfrecords_dir ./data/training_data_example/tfrecords
+
+在lanenet-lane-detection-master文件夹下运行代码，进行测试：
+
+python tools/test_lanenet.py --weights_path model/New_Tusimple_Lanenet_Model_Weights/tusimple_lanenet_vgg.ckpt  --image_path data/tusimple_test_image/0.jpg
+
+python test_lanenet.py --weights_path model/New_Tusimple_Lanenet_Model_Weights/tusimple_lanenet_vgg.ckpt  --image_path data/tusimple_test_image/0.jpg
+
+python evaluate_lanenet_on_tusimple.py --image_dir E:\yinyuanqi\lanenet-lane-detection-master\dataset\clips --weights_path model/New_Tusimple_Lanenet_Model_Weights/tusimple_lanenet_vgg.ckpt --save_dir result/test_output
+F:\XuChenMiao\tusimple\clips
